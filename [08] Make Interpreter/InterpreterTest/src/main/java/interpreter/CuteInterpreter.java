@@ -28,27 +28,8 @@ public class CuteInterpreter {
 				 System.out.println("Program end...");
 				 break;
 			 }
-			 
-			 String fileName = String.valueOf(cloader.getResource("interpreter/as07.txt").getFile()); //파일 경로
-
-			 try {
-				 //입력받은 내용으로 파일 생성하기
-				 File file = new File(fileName);
-				 FileWriter fw = new FileWriter(file);
-				 fw.write(program);
-				 fw.flush();
-				 
-				 fw.close();
-				 
-			 } catch(Exception e) {
-				 e.printStackTrace();
-			 }
-			 
-			 File file = new 
-					 //일단 경로 미수정
-			 File(cloader.getResource("interpreter/as07.txt").getFile());
-		 
-			 CuteParser cuteParser = new CuteParser(file);
+		
+			 CuteParser cuteParser = new CuteParser(program);
 			 CuteInterpreter interpreter = new CuteInterpreter();
 		 
 			 Node parseTree = cuteParser.parseExpr();

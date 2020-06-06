@@ -10,13 +10,13 @@ import java.util.stream.StreamSupport;
 
 public class Scanner {
     // return tokens as an Iterator
-    public static Iterator<Token> scan(File file) throws FileNotFoundException {
+    public static Iterator<Token> scan(String file) throws FileNotFoundException {
         ScanContext context = new ScanContext(file);
         return new TokenIterator(context);
     }
 
     // return tokens as a Stream 
-    public static Stream<Token> stream(File file) throws FileNotFoundException {
+    public static Stream<Token> stream(String file) throws FileNotFoundException {
         Iterator<Token> tokens = scan(file);
         return StreamSupport.stream(
                 Spliterators.spliteratorUnknownSize(tokens, Spliterator.ORDERED), false);

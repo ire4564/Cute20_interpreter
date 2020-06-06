@@ -36,8 +36,8 @@ public class ScannerMain {
     
     // use tokens as a Stream 
     private static void testTokenStream(File file) throws FileNotFoundException {	
-        Stream<Token> tokens = Scanner.stream(file);
-        tokens.map(ScannerMain::toString).forEach(System.out::println);
+        //Stream<Token> tokens = Scanner.stream(file);
+        //tokens.map(ScannerMain::toString).forEach(System.out::println);
     }    
     
     private static String toString(Token token) {

@@ -21,7 +21,7 @@ public class CuteParser {
 	private Iterator<Token> tokens;
 	private static Node END_OF_LIST = new Node() {}; //새로 추가된 부분
 	
-	public CuteParser(File file) {
+	public CuteParser(String file) {
 		try {
 			tokens = Scanner.scan(file);
 		} catch (FileNotFoundException e) {

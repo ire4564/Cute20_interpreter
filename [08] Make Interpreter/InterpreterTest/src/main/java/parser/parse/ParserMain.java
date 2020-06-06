@@ -7,9 +7,9 @@ public class ParserMain {
         ClassLoader cloader = ParserMain.class.getClassLoader();
 		File file = new File(cloader.getResource("interpreter/as07.txt").getFile());
           
-		CuteParser cuteParser = new CuteParser(file);
-		NodePrinter nodePrinter = new NodePrinter(cuteParser.parseExpr());
-		nodePrinter.prettyPrint();
+		//CuteParser cuteParser = new CuteParser(file);
+		//NodePrinter nodePrinter = new NodePrinter(cuteParser.parseExpr());
+		//nodePrinter.prettyPrint();
 
     }
 }

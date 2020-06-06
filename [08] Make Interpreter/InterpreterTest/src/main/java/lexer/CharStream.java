@@ -5,13 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.Reader;
+import java.io.StringReader;
 
 class CharStream {
 	private final Reader reader;
 	private Character cache;
 	
-	static CharStream from(File file) throws FileNotFoundException {
-		return new CharStream(new FileReader(file));
+	static CharStream from(String file) throws FileNotFoundException {
+		return new CharStream(new StringReader(file));
 	}
 	
 	CharStream(Reader reader) {
