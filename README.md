@@ -1,4 +1,4 @@
-# Cute20_interpreter
+# Make interpreter, about Cute20 language
 프로그래밍언어개론을 배우며 만든 Cute20 language에 관한 interpreter를 구현함.<br/>
 Cute20 language는 기존에 사용하는 scheme과 비슷하다.
 
